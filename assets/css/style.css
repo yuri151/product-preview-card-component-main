@@ -25,9 +25,10 @@ body{
 #conteudo{
     display: flex;
     flex-direction: row;
+    
  
     width: 550px;
-    height: 410px;
+    height: 417px;
     background-color: white;
     border-radius: 10px;
     
@@ -36,8 +37,8 @@ body{
 #img-perfume, #img-conteudo-prefume{
     width: 50%;
     height: 100%;
- 
 } 
+
 main div picture img {
     width: 100%;
     height: 100%;
@@ -93,15 +94,15 @@ p{
 }
 
 #preco{
-    font-size: 25px;
+    font-size: 32px;
     color: hsl(158, 36%, 37%);
 
 }
 
 #preco-promocao{
-    font-size: 11px;
-    margin-left: 18px;
-    margin-top: 8px;
+    font-size: 13px;
+    margin-left: 17px;
+    margin-top: 12px;
   
 }
 
@@ -115,6 +116,7 @@ button{
     border-radius: 8px;
 
     font-weight: 600;
+    font-size: 14px;
 
     background-color: hsl(158, 36%, 37%);
     color: #fff; 
@@ -123,12 +125,93 @@ button{
 }
 
 button img{
-    width: 10px;
+    width: 14px;
+    height: 14px;
     margin-right: 5px;
+    margin-bottom: -2px ;
+}
 
+a{
+    text-decoration: none;
 }
 
 button:hover{
     background-color:hsl(158, 36%, 17%);
 }
 
+@media (max-width:520px){
+    #conteudo{
+        width: 250px;
+        height: 447px;
+        flex-direction: column;
+        border-radius: 8px;
+       
+    }
+
+    #img-perfume{
+        width: 100%;
+        height: 40%;
+    }
+
+    main div picture img{
+        border-radius: 0px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 8px;
+    }
+
+    h2, h3, button, p, #preco{
+        margin-left: 20px;
+    }
+
+    h2{
+        margin-top: 17px ;
+        font-size: 9px;
+    }
+
+    h3{
+        width: 220px;
+        font-size: 23px;
+        line-height: 22px;
+
+        margin-right: 0px;
+        margin-top: 10px;
+    }
+
+    p{
+        width: 210px;
+        font-size: 10px;
+        line-height: 17px;
+
+        margin-right: 0px;
+        margin-top: 12px;
+    }
+
+    #precos{
+        margin-top: 15px;
+    }
+
+    #preco{
+        font-size:  23px;
+    }
+
+    #preco-promocao{
+        font-size: 10px;
+
+        margin-top: 8px;
+        margin-left: 10px;
+    }
+
+    button{
+        width: 210px;
+        height: 35px;
+        margin-top: 12px;
+
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    button img{
+        width: 12px;
+        height: 12px;
+    }
+}
